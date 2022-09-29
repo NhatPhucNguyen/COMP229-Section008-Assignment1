@@ -14,6 +14,7 @@ router.get('/', function (req, res, next) {
     lastName
   });
   console.log(`\nfirstName: ${firstName}\nlastName: ${lastName}\nemail: ${email}\nphoneNumber: ${phoneNumber}\nmessage: ${message}\n`);
+  firstName = "";
 });
 router.get('/home', function (req, res, next) {
   res.render('index', { title: 'Home' });
